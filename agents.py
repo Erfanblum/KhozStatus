@@ -1,6 +1,6 @@
 import os
 from pydantic_ai import Agent
-from pydantic_ai.models.openai import OpenAIModel
+from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 from models import NewsAnalysis, FinalStatus
 
@@ -12,7 +12,7 @@ apmix_provider = OpenAIProvider(
 
 # انتخاب یک مدل سریع و مقرون‌به‌صرفه از کاتالوگ apmix
 # می‌توانید بسته به پلن خود، مدل را تغییر دهید (مثلاً "gpt-4o-mini" یا "claude-3-haiku")
-model = OpenAIModel("gpt-4o-mini", provider=apmix_provider)
+model = OpenAIChatModel("hy4-free", provider=apmix_provider)
 
 news_agent = Agent(
     model,
