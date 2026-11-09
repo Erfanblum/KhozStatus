@@ -1,0 +1,7 @@
+pydantic-ai[openai]
+telethon
+python-telegram-bot
+asyncpg
+aiohttp
+Flask
+python-dotenv
